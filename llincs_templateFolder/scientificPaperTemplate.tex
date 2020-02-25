@@ -3,8 +3,9 @@
 % Version 2.20 of 2017/10/04
 %
 \documentclass[runningheads]{llncs}
+\usepackage{CJKutf8}
 %
-\usepackage{graphicx}
+%\usepackage{graphicx}
 % Used for displaying a sample figure. If possible, figure files should
 % be included in EPS format.
 %
@@ -14,7 +15,7 @@
 
 \begin{document}
 %
-\title{Insert Title}
+\title{Insert Title EDIT TEST}
 %
 %\titlerunning{Abbreviated paper title}
 % If the paper title is too long for the running head, you can set
@@ -46,7 +47,13 @@ Abstract is here
 Introduction
 
 \section{first Section}
+test test
+\begin{CJK}{UTF8}{min}
+\section{これは最初のセクションである}
+日本語で \LaTeX の組版を実証するための導入部分。
 
+フォントはまた、数学的な形態および他の環境で使用することができる
+\end{CJK}
 xyz
 \begin{enumerate}
 	\item this is a list
@@ -91,7 +98,7 @@ bla
 %
 % ---- Bibliography ----
 \bibliographystyle{splncs04}
-\bibliography{insert bib file}
+%\bibliography{insert bib file}
 
 
 \end{document}
